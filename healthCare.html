@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthCare Medications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: #28a745;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #218838;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .medicine-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .medicine-item {
+      background: white;
+      padding: 15px;
+      border: 1px solid #ddd;
+      width: 250px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .medicine-item img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HealthCare Medications</h1>
+    <p>Your trusted online pharmacy</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#medicines">Medicines</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="addrees">address</a>
+  </nav>
+
+  <main>
+    <section id="medicines">
+      <h2>Our Featured Medicines</h2>
+      <div class="medicine-list">
+        <div class="medicine-item">
+          <img src="https://via.placeholder.com/250x150?text=Paracetamol" alt="Paracetamol">
+          <h3>Paracetamol</h3>
+          <p>For fever and pain relief</p>
+          <p><strong>Price:</strong> ₹50</p>
+        </div>
+        <div class="medicine-item">
+          <img src="https://via.placeholder.com/250x150?text=Amoxicillin" alt="Amoxicillin">
+          <h3>Amoxicillin</h3>
+          <p>Antibiotic medicine</p>
+          <p><strong>Price:</strong> ₹120</p>
+        </div>
+        <div class="medicine-item">
+          <img src="https://via.placeholder.com/250x150?text=Vitamin+C" alt="Vitamin C">
+          <h3>Vitamin C</h3>
+          <p>Immune system booster</p>
+          <p><strong>Price:</strong> ₹75</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a trusted provider of quality medicines delivered directly to your home. HealthCare Medications ensures all products are certified and handled with care.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: support@healthcaremeds.com</p>
+      <p>Phone: +91 7024473245</p>
+      <p>Address: saket nagar, bhopal, India</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 HealthCare Medications. All rights reserved.
+  </footer>
+
+</body>
+</html>
