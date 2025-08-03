@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Examples</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .static-box {
+        position: static;
+        background: #607d8b;
+      }
+
+      .relative-box {
+        position: relative;
+        background: #3f51b5;
+        left: 20px;
+        top: 10px;
+      }
+
+      .absolute-container {
+        position: relative;
+        height: 200px;
+        background: #f0f0f0;
+        border: 2px dashed gray;
+        margin-bottom: 20px;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 120px;
+        height: 120px;
+        background: #009688;
+      }
+
+      .fixed-box {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        height: 120px;
+        background: #e91e63;
+        z-index: 999;
+      }
+
+      .sticky-box {
+        position: sticky;
+        top: 0;
+        background: #ff9800;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position: static (default)</h2>
+    <div class="box static-box">Static</div>
+
+    <h2>position: relative</h2>
+    <div class="box relative-box">Relative</div>
+
+    <h2>position: absolute (inside relative parent)</h2>
+    <div class="absolute-container">
+      <div class="box absolute-box">Absolute</div>
+    </div>
+
+    <h2>position: sticky</h2>
+    <div class="sticky-box">Sticky Header</div>
+
+    <div style="height: 800px">Scroll to see sticky & fixed in action...</div>
+
+    <div class="fixed-box">Fixed</div>
+  </body>
+</html>
